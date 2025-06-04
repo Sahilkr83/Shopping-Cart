@@ -20,7 +20,7 @@ const {cart} = useSelector((state) => state);
     <div className="flex flex-col items-center justify-between
      transition-all duration-300 ease-in hover:scale-110 
      hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] gap-3
-     p-4 mt-10 ml-5 rounded-xl shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+     p-4 mt-10 ml-[15px] mr-[15px] rounded-xl shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
 
       <div>
         <p className="text-gray-700 font-semibold  text-lg text-left truncate w-40 mt-1">{post.title}</p>
@@ -28,8 +28,8 @@ const {cart} = useSelector((state) => state);
       <div>
         <p className="text-[10px] text-gray-400 font-normal w-40 text-left">{post.description.split(" ").slice(0,10).join(' ') + "..."}</p>
       </div>
-      <div className="h-[180px]">
-        <img className="h-full w-full" alt="Product" src={post.image}  />
+      <div className="h-[180px] sm:w-[200px] sm:h-[200px] w-full ">
+        <img className="h-full w-full object-contain" alt="Product" src={post.image}  />
       </div> 
       <div className="flex justify-between items-center gap-12 w-full mt-5">
        <div> <p className="text-green-600 font-semibold ">${post.price}</p></div>
