@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Spinner from "../components/Spinner";
 import Product from "../components/Product";
+import data from "../data.js";
 
 const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
@@ -10,8 +11,8 @@ const Home = () => {
   async function cartData (){
     setLoading(true)
     try{
-      const response = await fetch(API_URL)
-      const data = await response.json()
+      // const response = await fetch(API_URL)
+      // const data = await response.json()
       setPost(data)
       console.log(data)
     }
