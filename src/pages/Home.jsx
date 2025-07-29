@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Spinner from "../components/Spinner";
 import Product from "../components/Product";
-import data from "../data.js";
+import {data} from "../data.js";
 
 const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
